@@ -14,12 +14,7 @@
           <li class="nav-item active text-right">
             <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" href="#storiess">STORIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#governance">GOVERNANCE</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="#">ABOUT US</a>
           </li>
@@ -27,8 +22,9 @@
             <a class="nav-link" href="#">CONTACT US</a>
           </li>
           <li class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }}
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="position: relative; padding-left:50px">
+              <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%">
+              {{ Auth::user()->name }}
             </a>
             <span class="navbar-text">
               
@@ -65,7 +61,7 @@
               <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
                 
     
-                <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">MMUAA</h1>
+                <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">Alz-Detect</h1>
                <!--  <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A Logistics Company</p>
                 <p data-aos="fade-up" data-aos-delay="200"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p> -->
     
@@ -83,11 +79,11 @@
               </div>
               <div class="col-md-6 order-md-1" data-aos="fade-up">
                 <div class="text-left pb-1 border-primary mb-4">
-                  <h2 class="text-primary">FEATURED STORY</h2>
+                  <h2 class="text-primary">THE ALZ JOURNEY</h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
                 <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
-                <p data-aos="fade-up" data-aos-delay="200"><a href="/viewstories" class="btn btn-primary py-3 px-5 text-white">PREDICT </a></p>
+                <p data-aos="fade-up" data-aos-delay="200"><a href="http://localhost:8501/" class="btn btn-primary py-3 px-5 text-white">PREDICT </a></p>
                 
                <!--  <ul class="ul-check list-unstyled success">
                   <li>Error minus sint nobis dolor</li>

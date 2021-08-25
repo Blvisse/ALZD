@@ -9,9 +9,11 @@
         "encore/laravel-admin": "^1.8",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.6",
         "laravel/framework": "^8.54",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.3"
+        "laravel/ui": "^3.3",
+        "phpmailer/phpmailer": "^6.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -26,8 +28,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files":["app/helpers.php"]
     },
+
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"

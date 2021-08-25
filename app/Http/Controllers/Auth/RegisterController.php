@@ -77,12 +77,26 @@ class RegisterController extends Controller
             session()->flash('alert-danger', 'Email already exists !');
                return redirect()->back();
         }
+
+        // $path='users/images/';
+        // $fontPath=public_path('fonts/Olicy.ttf');
+        // $char=strtoupper($request->name[0]);
+        // $newAvatarName=rand(12,34353).time().'_avatar.png';
+        // $dest=$path.$newAvatarName;
+
+        // $createAvatar = makeAvatar($fontPath,$dest,$char);
+        // $picture = $createAvatar == true ? $newAvatarName : '';
+
+
+
+
          $user=new User();
          $user->name = $request->name;
          $user->email = $request->email;
          $user->password = Hash::make($request->password);
          $user->verification_code=sha1(time());
          $user->medical_id= $request->medical_id;
+         $user->picture = $picture;
          $user->save();
 
          #check if user is created
@@ -91,7 +105,7 @@ class RegisterController extends Controller
          {
              #if user is not null we send mail
              #redirect to verification page
-             #show message email sent with verfication link
+             #show message email sent with verification link
             MailController::sendSignupEmail($user->name,$user->medical_id,$user->email,$user->verification_code);
 
             return redirect()->back()->with(session()->flash('alert-success','Account created check email for verification link'));

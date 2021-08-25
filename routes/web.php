@@ -25,7 +25,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('verify',[RegisterController::class , 'verifyUser'])->name('verify.user');
+Route::get('/verify',[RegisterController::class , 'verifyUser'])->name('verify.user');
 Route::get('users/profile',[App\Http\Controllers\UserController::class ,'edit'])->name('users.edit-profile');
 Route::get('users', [UserController::class ,'index'])->name('users.index');
 Route::put('users/profile',[App\Http\Controllers\UserController::class ,'update'])->name('users.update-profile');

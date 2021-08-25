@@ -64,12 +64,19 @@
         <div class="card-header">My Profile</div>
         <div class="card-body">
             {{-- @include('partials.errors') --}}
-            <form action="{{route('users.update-profile')}}" method="post">
+            <form enctype="multipart/form-data" action="{{route('users.update-profile')}}" method="post">
             
             @csrf 
 
             @method('PUT')
+            <div class="form-group">
+              <label for="avatar">Image</label>
+              <img src="/uploads/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius: 50%; margin-right: 25%; " >
+              <input type="file" name="avatar" class="form-control" placeholder="Avatar", id="avatar" value="{{ $user->avatar }}" >
 
+              
+
+          </div>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" class="form-control" placeholder="Name", id="name" value="{{ $user->name }}" >
@@ -88,6 +95,7 @@
                 
 
             </div>
+
             <button type="submit" class="btn btn-success">Update Details</button>
             </form> 
 
