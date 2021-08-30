@@ -3,7 +3,7 @@
 @section('content')
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
-            <div class="container">
+            <div class="container p-3 mb-2 bg-success text-white">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Alz-Detect') }}
                 </a>

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
+class ComposerStaticInit32826bca01a2f57f38de804177f82538
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -37,7 +37,6 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
-        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -1594,12 +1593,14 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'Facade\\Ignition\\Ignition' => __DIR__ . '/..' . '/facade/ignition/src/Ignition.php',
         'Facade\\Ignition\\IgnitionConfig' => __DIR__ . '/..' . '/facade/ignition/src/IgnitionConfig.php',
         'Facade\\Ignition\\IgnitionServiceProvider' => __DIR__ . '/..' . '/facade/ignition/src/IgnitionServiceProvider.php',
+        'Facade\\Ignition\\JobRecorder\\JobRecorder' => __DIR__ . '/..' . '/facade/ignition/src/JobRecorder/JobRecorder.php',
         'Facade\\Ignition\\LogRecorder\\LogMessage' => __DIR__ . '/..' . '/facade/ignition/src/LogRecorder/LogMessage.php',
         'Facade\\Ignition\\LogRecorder\\LogRecorder' => __DIR__ . '/..' . '/facade/ignition/src/LogRecorder/LogRecorder.php',
         'Facade\\Ignition\\Logger\\FlareHandler' => __DIR__ . '/..' . '/facade/ignition/src/Logger/FlareHandler.php',
         'Facade\\Ignition\\Middleware\\AddDumps' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddDumps.php',
         'Facade\\Ignition\\Middleware\\AddEnvironmentInformation' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddEnvironmentInformation.php',
         'Facade\\Ignition\\Middleware\\AddGitInformation' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddGitInformation.php',
+        'Facade\\Ignition\\Middleware\\AddJobInformation' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddJobInformation.php',
         'Facade\\Ignition\\Middleware\\AddLogs' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddLogs.php',
         'Facade\\Ignition\\Middleware\\AddQueries' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddQueries.php',
         'Facade\\Ignition\\Middleware\\AddSolutions' => __DIR__ . '/..' . '/facade/ignition/src/Middleware/AddSolutions.php',
@@ -2397,8 +2398,6 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'Illuminate\\Cache\\TagSet' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Cache/TagSet.php',
         'Illuminate\\Cache\\TaggableStore' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Cache/TaggableStore.php',
         'Illuminate\\Cache\\TaggedCache' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Cache/TaggedCache.php',
-        'Illuminate\\Collections\\ItemNotFoundException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/ItemNotFoundException.php',
-        'Illuminate\\Collections\\MultipleItemsFoundException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/MultipleItemsFoundException.php',
         'Illuminate\\Config\\Repository' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Config/Repository.php',
         'Illuminate\\Console\\Application' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Application.php',
         'Illuminate\\Console\\BufferedConsoleOutput' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php',
@@ -3180,9 +3179,11 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'Illuminate\\Support\\HigherOrderWhenProxy' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/HigherOrderWhenProxy.php',
         'Illuminate\\Support\\HtmlString' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/HtmlString.php',
         'Illuminate\\Support\\InteractsWithTime' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/InteractsWithTime.php',
+        'Illuminate\\Support\\ItemNotFoundException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/ItemNotFoundException.php',
         'Illuminate\\Support\\LazyCollection' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/LazyCollection.php',
         'Illuminate\\Support\\Manager' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Manager.php',
         'Illuminate\\Support\\MessageBag' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/MessageBag.php',
+        'Illuminate\\Support\\MultipleItemsFoundException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/MultipleItemsFoundException.php',
         'Illuminate\\Support\\NamespacedItemResolver' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php',
         'Illuminate\\Support\\Optional' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Optional.php',
         'Illuminate\\Support\\Pluralizer' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Pluralizer.php',
@@ -3229,6 +3230,7 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'Illuminate\\Testing\\ParallelTesting' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/ParallelTesting.php',
         'Illuminate\\Testing\\ParallelTestingServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php',
         'Illuminate\\Testing\\PendingCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/PendingCommand.php',
+        'Illuminate\\Testing\\TestComponent' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/TestComponent.php',
         'Illuminate\\Testing\\TestResponse' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/TestResponse.php',
         'Illuminate\\Testing\\TestView' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Testing/TestView.php',
         'Illuminate\\Translation\\ArrayLoader' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Translation/ArrayLoader.php',
@@ -3287,6 +3289,7 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
         'Illuminate\\View\\Compilers\\Concerns\\CompilesTranslations' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesTranslations.php',
         'Illuminate\\View\\Component' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Component.php',
         'Illuminate\\View\\ComponentAttributeBag' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ComponentAttributeBag.php',
+        'Illuminate\\View\\ComponentSlot' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ComponentSlot.php',
         'Illuminate\\View\\Concerns\\ManagesComponents' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php',
         'Illuminate\\View\\Concerns\\ManagesEvents' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php',
         'Illuminate\\View\\Concerns\\ManagesLayouts' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Concerns/ManagesLayouts.php',
@@ -6280,10 +6283,10 @@ class ComposerStaticInit60387d81f7c52b6e79066a77a2871170
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit60387d81f7c52b6e79066a77a2871170::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit60387d81f7c52b6e79066a77a2871170::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit60387d81f7c52b6e79066a77a2871170::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit60387d81f7c52b6e79066a77a2871170::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit32826bca01a2f57f38de804177f82538::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit32826bca01a2f57f38de804177f82538::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit32826bca01a2f57f38de804177f82538::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit32826bca01a2f57f38de804177f82538::$classMap;
 
         }, null, ClassLoader::class);
     }

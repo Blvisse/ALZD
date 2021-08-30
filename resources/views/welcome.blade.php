@@ -85,8 +85,8 @@
                 <div class="text-left pb-1 border-primary mb-4">
                   <h2 class="text-primary">THE FUTURE OF HEALTH CARE </h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
-                <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
+                <p>Alzheimer’s disease is an irreversible, progressive disorder that slowly destroys memory and thinking skills. It eventually impedes the person from carrying out the simplest everyday tasks. The onset of symptoms mainly appears when the person is in their mid-60’s. If not addressed it rolls on to become the most common cause of dementia among older adults. </p>
+                <p class="mb-5">Now is the time to exploit modern technology to help battle Alzheimers.</p>
                 <p data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary py-3 px-5 text-white" href="{{ route('register') }}" >JOIN US </a></p>
                 
                <!--  <ul class="ul-check list-unstyled success">
@@ -100,6 +100,9 @@
             </div>
           </div>
         </div>
+
+
+    
     
       
         

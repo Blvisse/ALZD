@@ -3,7 +3,7 @@
 @section('content')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
-    <div class="container">
+    <div class="container p-3 mb-2 bg-primary text-white">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Alz-Detect') }}
         </a>
@@ -56,10 +56,11 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
 
+<div class="container" >
+    <div class="row justify-content-center" >
+        <div class="col-md-8">
+            {{-- <div class="p-3 mb-2 bg-warning text-dark"> --}}
             <div class="flash-message">
                 @foreach (['danger','warning','success','info'] as $msg)
                     @if (Session::has('alert-'.$msg.''))
@@ -69,7 +70,7 @@
                     
                 @endforeach
             </div>
-            <div class="card">
+            
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -151,4 +152,5 @@
         </div>
     </div>
 </div>
-@endsection
+</div>
+{{-- @endsection --}}

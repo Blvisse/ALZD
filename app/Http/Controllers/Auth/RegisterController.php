@@ -96,7 +96,7 @@ class RegisterController extends Controller
          $user->password = Hash::make($request->password);
          $user->verification_code=sha1(time());
          $user->medical_id= $request->medical_id;
-         $user->picture = $picture;
+        //  $user->picture = $picture;
          $user->save();
 
          #check if user is created

@@ -14,18 +14,7 @@
           <li class="nav-item active text-right">
             <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" href="#storiess">STORIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#governance">GOVERNANCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
-          </li>
+          
           <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
